@@ -6,11 +6,13 @@ class CardDesign extends StatelessWidget {
     required this.name,
     required this.imgsURL,
     required this.price,
+    required this.toConvert,
   });
 
   String name;
   String imgsURL;
   double price;
+  double toConvert;
 
   Widget build(BuildContext context) {
     return Container(
@@ -18,10 +20,6 @@ class CardDesign extends StatelessWidget {
       //margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 246, 246, 246),
-        // border: Border.all(
-        //   width: 1,
-        // ),
-        // borderRadius: BorderRadius.circular(25),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -29,15 +27,15 @@ class CardDesign extends StatelessWidget {
           Container(
             child: Row(
               children: [
-                Container(
-                  margin: EdgeInsets.only(right: 10),
-                  child: Image.network(
-                    imgsURL,
-                    height: 50,
-                  ),
-                ),
+                // Container(
+                //   margin: EdgeInsets.only(right: 10),
+                //   child: Image.network(
+                //     imgsURL,
+                //     height: 50,
+                //   ),
+                // ),
                 Text(
-                  'BTC',
+                  name,
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -50,7 +48,7 @@ class CardDesign extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  '2.34',
+                  toConvert.toStringAsFixed(5),
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 30,
