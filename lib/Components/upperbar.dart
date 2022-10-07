@@ -23,7 +23,7 @@ class _UpperBarState extends State<UpperBar> {
         children: [
           Container(
             child: Text(
-              "\$MEX",
+              "\$USD",
               style: TextStyle(
                 fontSize: 40,
                 color: Colors.white,

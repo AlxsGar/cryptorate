@@ -67,8 +67,7 @@ class _MainBodyState extends State<MainBody> {
                     imgsURL: coinList[index].imageUrl,
                     name: coinList[index].name,
                     price: coinList[index].price.toDouble(),
-                    toConvert:
-                        receivedValue / 20 / coinList[index].price.toDouble(),
+                    toConvert: receivedValue / coinList[index].price.toDouble(),
                   ),
                 );
               },

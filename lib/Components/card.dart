@@ -27,13 +27,13 @@ class CardDesign extends StatelessWidget {
           Container(
             child: Row(
               children: [
-                // Container(
-                //   margin: EdgeInsets.only(right: 10),
-                //   child: Image.network(
-                //     imgsURL,
-                //     height: 50,
-                //   ),
-                // ),
+                Container(
+                  margin: EdgeInsets.only(right: 10),
+                  child: Image.network(
+                    imgsURL,
+                    height: 50,
+                  ),
+                ),
                 Text(
                   name,
                   style: TextStyle(
